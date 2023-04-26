@@ -1,0 +1,45 @@
+.welcome-header-text {
+  font-size: 10.5vw;
+  @apply top-8 flex flex-col leading-[12.5vw] pl-6 lg:flex-row sm:text-7xl lg:text-5xl lg:justify-center xl:text-7xl;
+}
+
+.welcome-header-text .first {
+  @apply mr-3;
+}
+
+.welcome-header-img {
+  @apply w-10/12 h-auto m-auto;
+}
+
+.green-underlined-text {
+  @apply text-[#00BE68] underline underline-offset-4;
+}
+
+.neon-glow-text-orange {
+  text-shadow: 0 0 15px orange;
+}
+
+.neon-glow-box-purple {
+  box-shadow: 0px 0px 75px #552a93;
+}
+
+.neon-glow-box-white {
+  box-shadow: 0 0 5px white;
+  height: 2px;
+}
+
+.neon-glow-text-white {
+  text-shadow: 0 0 4px white;
+}
+
+.neon-glow-text-pink {
+  text-shadow: 0 0 4px hotpink;
+}
+
+.box-2d-shadow-purple {
+  box-shadow: 3px 3px 0 #552a93;
+}
+
+.box-2d-shadow-pink {
+  box-shadow: 5px 5px 0 #ff577f;
+}

@@ -8,7 +8,7 @@
 @import url('./animation.css');
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 #page-bg-w-texture {

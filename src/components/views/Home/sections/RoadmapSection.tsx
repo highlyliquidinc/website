@@ -3,7 +3,10 @@ import Image from 'next/image'
 
 const PantyDropSection: FC = () => {
   return (
-    <div className="max-w-xl m-auto xl:flex xl:flex-row xl:items-center xl:max-w-7xl xl:my-32">
+    <div
+      id="roadmap"
+      className="max-w-xl m-auto xl:flex xl:flex-row xl:items-center xl:max-w-7xl xl:my-32"
+    >
       <div className="px-4 xl:flex xl:flex-col xl:justify-center xl:pt-10 xl:w-[1000px]">
         <h2 className="text-5xl uppercase neon-glow-text-orange mb-4">
           Roadmap

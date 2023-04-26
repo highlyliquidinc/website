@@ -15,13 +15,13 @@ const Header = () => {
       <nav>
         <ul className="flex flex-row items-center">
           <NavItem>
-            <a href="#">Home</a>
+            <a href="#landing">Home</a>
           </NavItem>
           <NavItem>
-            <a href="#">About</a>
+            <a href="#roadmap">About</a>
           </NavItem>
           <NavItem>
-            <a href="#">Contact</a>
+            <a href="mailto:izzy@highlyliquid.xyz">Contact</a>
           </NavItem>
         </ul>
       </nav>

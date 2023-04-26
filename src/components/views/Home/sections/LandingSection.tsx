@@ -3,7 +3,10 @@ import Image from 'next/image'
 
 const LandingSection: FC = () => {
   return (
-    <div className="max-w-xl m-auto lg:max-w-4xl xl:max-w-7xl xl:mt-20 xl:mb-32">
+    <div
+      id="landing"
+      className="max-w-xl m-auto lg:max-w-4xl xl:max-w-7xl xl:mt-20 xl:mb-32"
+    >
       <div className="relative">
         <h1 className="absolute welcome-header-text neon-glow-text-orange">
           <span className="first">Welcome to</span>{' '}

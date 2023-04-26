@@ -6,6 +6,10 @@
 @import url('./font.css');
 @import url('./animation.css');
 
+body {
+  overflow-x: hidden;
+}
+
 #page-bg-w-texture {
   background-image: url('/bg-texture.png');
   background-repeat: repeat-x;

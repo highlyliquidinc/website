@@ -12,7 +12,7 @@ const RotatingTextBar: FC<{ text: string }> = ({ text }) => {
   }, [])
 
   return (
-    <div className="bg-[#552A93] neon-glow-box-purple py-1 my-10 ticker-wrap">
+    <div className="bg-[#552A93] neon-glow-box-purple py-1 my-10 ticker-wrap overflow-x-hidden">
       <div className="flex flex-row ticker">
         {new Array(10).fill(text).map((t, i) => (
           <span

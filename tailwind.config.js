@@ -18,6 +18,9 @@ module.exports = {
       },
       colors: {
         'theme-light': '#ECF3F9'
+      },
+      screens: {
+        'carousel-screen': '1850px'
       }
     }
   },

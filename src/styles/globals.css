@@ -4,6 +4,7 @@
 
 @import url('./theme.css');
 @import url('./font.css');
+@import url('./animation.css');
 
 #page-bg-w-texture {
   background-image: url('/bg-texture.png');

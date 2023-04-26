@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel'
 
 const CarouselItem: FC<{ title: string; text: string }> = ({ title, text }) => {
   return (
-    <div className="flex flex-col shadow-lg bg-white h-48 w-52 mx-5 p-4 text-md xl:h-80 xl:w-80 xl:px-10">
+    <div className="flex-grow float-left flex flex-col shadow-lg bg-white h-48 w-52 mx-5 p-4 text-md xl:h-80 xl:w-80 xl:px-10 flex-shrink-0">
       <h3 className="text-center font-body xl:text-2xl">{title}</h3>
       <div className="flex items-center justify-center xl:text-xl xl:mt-14">
         <p className="text-center mt-4">{text}</p>
@@ -17,30 +17,32 @@ const PlanCarouselSection: FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   return (
     <div className="mb-20">
-      <h2 className="font-body text-2xl text-center green-underlined-text mb-8 mt-5">
+      <h2 className="font-body text-2xl text-center green-underlined-text mb-8 mt-5 md:my-16 xl:text-3xl">
         Here&apos;s the plan
       </h2>
-      <div className="grid grid-cols-5 overflow-x-scroll gap-x-60">
-        <CarouselItem
-          title="Drop #002"
-          text="The first-ever art prank involving payments and panties (we can't say much more rn)"
-        />
-        <CarouselItem
-          title="Drop #003"
-          text="We're dropping a dating app - Highly Liquid style ❤️‍🔥"
-        />
-        <CarouselItem
-          title="Drop #004"
-          text="Meet our first official influencer collab 👑"
-        />
-        <CarouselItem
-          title="Drop #005"
-          text="Our capsule collection is set to go live in fall of 2023"
-        />
-        <CarouselItem
-          title="Drop #006"
-          text="Get ready for total world-domination 😈🌎"
-        />
+      <div className="overflow-x-scroll w-full">
+        <div className="grid grid-cols-[258px_258px_258px_258px_258px] xl:grid-cols-[372px_372px_372px_372px_372px] relative m-auto w-full carousel-screen:justify-center">
+          <CarouselItem
+            title="Drop #002"
+            text="The first-ever art prank involving payments and panties (we can't say much more rn)"
+          />
+          <CarouselItem
+            title="Drop #003"
+            text="We're dropping a dating app - Highly Liquid style ❤️‍🔥"
+          />
+          <CarouselItem
+            title="Drop #004"
+            text="Meet our first official influencer collab 👑"
+          />
+          <CarouselItem
+            title="Drop #005"
+            text="Our capsule collection is set to go live in fall of 2023"
+          />
+          <CarouselItem
+            title="Drop #006"
+            text="Get ready for total world-domination 😈🌎"
+          />
+        </div>
       </div>
       {/* <Carousel
         selectedItem={currentSlide}
